@@ -1,0 +1,28 @@
+@import "./main.module.scss";
+
+.nav {
+  background-color: $color-grey;
+  padding: 1rem;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+
+  @include respond(s) {
+    flex-wrap: wrap;
+  }
+}
+.link {
+  font-family: "Share Tech Mono", monospace;
+  font-size: 2rem;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  transition: all 0.3s;
+
+  &:hover {
+    color: blue;
+  }
+}

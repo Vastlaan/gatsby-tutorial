@@ -1,0 +1,31 @@
+@import "./respond.module.scss";
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  line-height: 1.6;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+
+  @include respond(m) {
+    font-size: 55%;
+  }
+
+  @include respond(s) {
+    font-size: 50%;
+  }
+
+  @include respond(xs) {
+    font-size: 45%;
+  }
+}
+
+.layout {
+  width: 100%;
+}

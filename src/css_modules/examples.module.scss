@@ -1,0 +1,12 @@
+@import "./main.module.scss";
+
+.page {
+  padding: 3rem;
+  background-color: azure;
+  & > h1 {
+    font-family: $font-tech;
+    font-size: 3rem;
+    color: $color-primary;
+    text-align: center;
+  }
+}

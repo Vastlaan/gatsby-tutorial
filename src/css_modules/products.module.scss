@@ -1,0 +1,61 @@
+@import "./main.module.scss";
+
+.page {
+  background-color: $color-primary-light;
+  padding: 2rem;
+}
+
+.header {
+  font-family: $font-tech;
+  font-size: 2rem;
+}
+
+.text {
+  font-family: $font-montserrat;
+}
+
+.collection {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+
+  @include respond(s) {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.item {
+  flex: 1;
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid $color-grey;
+  & > div {
+    height: 25rem;
+  }
+
+  &__details {
+    margin: 1rem auto;
+    display: flex;
+    justify-content: space-between;
+    font-family: $font-rajdhani;
+    font-size: 2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+
+    span {
+      text-transform: capitalize;
+      font-weight: 400;
+    }
+  }
+
+  &__button {
+    padding: 0.5rem 2rem;
+    background-color: #647859;
+    color: white;
+    text-decoration: none;
+    font-family: $font-rajdhani;
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+}

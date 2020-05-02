@@ -1,0 +1,44 @@
+@import "./main.module.scss";
+
+.component {
+  margin: 2rem auto;
+}
+
+.header {
+  font-family: $font-tech;
+  font-size: 2rem;
+  color: $color-secondary;
+}
+
+.field {
+  display: flex;
+  padding-left: 1rem;
+
+  & > p {
+    margin-right: 1rem;
+    font-family: $font-rajdhani;
+    font-size: 1.8rem;
+  }
+}
+
+.images {
+  width: 80%;
+  margin: 10rem auto;
+  display: flex;
+  justify-content: space-between;
+
+  @include respond(s) {
+    flex-direction: column;
+  }
+}
+.image {
+  flex: 1;
+  border: 1px solid $color-grey;
+  padding: 1rem;
+  margin: 2rem;
+
+  &__small {
+    width: 50%;
+    margin: 1rem auto;
+  }
+}
